@@ -1,3 +1,3 @@
 {"name":"Apple MacBook Pro 17","price":"2999","color":"gray","category":"laptop","id":1}
-{"name":"Microsoft Surface PRO","price":"1800","color":"pink","category":"pc","id":2}
+{"name":"Microsoft Surface","price":"2500","color":"pink","category":"pc","id":2}
 {"name":"Magic Mouse 2","price":"99","color":"white","category":"accesories","id":3}
