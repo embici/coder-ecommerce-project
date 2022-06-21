@@ -1,14 +1,14 @@
 const express = require('express');
 const path = require('path'); 
-const productsRouter = require('./routers/productsRouter');
-const cartRouter = require('./routers/cartRouter');
+const productsRouter = require('./server/routers/productsRouter');
+const cartRouter = require('./server/routers/cartRouter');
 
 const app = express();
 const port = process.env.PORT || 8080;
 // const DIST_DIR = path.join(__dirname, '../build');
 // const HTML_FILE = path.join(DIST_DIR, 'index.html');
 
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, './build')));
 
 
 const mockResponse = {
