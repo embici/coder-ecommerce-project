@@ -27,8 +27,23 @@ app.get('/api', (req, res) => {
   res.send(mockResponse);
 });
 
-app.listen(port, function () {
+app.listen(port, function (req, res) {
  console.log('App listening on port: ' + port);
+ res.writeHead(200, {'Content-Type': 'text/html'});
+ res.end('' +
+`<html>
+<head></head>
+<body>
+ Data render at browser page
+ <script>
+   /********** Browser start ********/
+   /* This code is run in the browser */
+   console.log('App listening on port: ', ${port});
+   /********** Browser end ********/
+ </script>
+</body>
+</html>`);
+ console.log('print in Node.js engine');   
 });
 
 // app.get('/', (req, res) => {
